@@ -8,5 +8,18 @@ document.querySelector("#header h1").onclick = function() {
   this.classList.toggle("makeWhite");
   } // toggles title color on page
 
+document.querySelector("#ingredients h4").onclick = function() {
+   document.querySelector("#ingredients ul").style.display = "block";
+  document.querySelector("#ingredients p").style.display = "block";
+ } //displays ingredients 
+
+ document.querySelector("#equipment h4").onclick = function() {
+   document.querySelector("#equipment ul").style.display = "block";
+ } //displays equipment 
+ 
+ document.querySelector("#directions h4").onclick = function() {
+   document.querySelector("#directions ol").style.display = "block";
+  document.querySelector("#directions p").style.display = "block";
+ } //displays directions
 }
-//end of window on loadp
+//end of window on load
