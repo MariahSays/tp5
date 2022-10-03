@@ -21,5 +21,8 @@ document.querySelector("#ingredients h4").onclick = function() {
    document.querySelector("#directions ol").style.display = "block";
   document.querySelector("#directions p").style.display = "block";
  } //displays directions
+ 
+ document.querySelector("#header").innerHTML += "<p>Enjoy!</p>";
+  
 }
 //end of window on load
