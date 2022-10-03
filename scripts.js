@@ -22,7 +22,6 @@ document.querySelector("#ingredients h4").onclick = function() {
   document.querySelector("#directions p").style.display = "block";
  } //displays directions
  
- document.querySelector("#header").innerHTML += "<p>Enjoy!</p>";
-  
+ document.querySelector("#ingredients ul").innerHTML +="<li>Love!</li>";
 }
 //end of window on load
