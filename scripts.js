@@ -9,8 +9,15 @@ document.querySelector("#header h1").onclick = function() {
   } // toggles title color on page
 
 document.querySelector("#ingredients h4").onclick = function() {
-   document.querySelector("#ingredients ul").style.display = "block";
-  document.querySelector("#ingredients p").style.display = "block";
+  listItems = document.querySelectorAll("#ingredients ul");
+  for(x=0; x<2;x++){
+    listItems[x].style.display = "block";
+  }
+  
+  listTitle = document.querySelectorAll("#ingredients p");
+    for(x=0; x<2;x++){
+    listTitle[x].style.display = "block";
+  }
  } //displays ingredients 
 
  document.querySelector("#equipment h4").onclick = function() {
@@ -18,8 +25,14 @@ document.querySelector("#ingredients h4").onclick = function() {
  } //displays equipment 
  
  document.querySelector("#directions h4").onclick = function() {
-   document.querySelector("#directions ol").style.display = "block";
-  document.querySelector("#directions p").style.display = "block";
+   directionsListItems = document.querySelectorAll("#directions ol");
+    for(x=0; x<2;x++){
+    directionsListItems[x].style.display = "block";
+  }
+  directionsListTitle= document.querySelectorAll("#directions p");
+      for(x=0; x<2;x++){
+    directionsListTitle[x].style.display = "block";
+      }
  } //displays directions
  
  document.querySelector("#ingredients ul").innerHTML +="<li>Love!</li>";
